@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+generated_docs/*.docx
+!generated_docs/.gitkeep
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.vscode/
+.idea/
+.DS_Store
