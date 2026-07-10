@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: autonomous-docx-agent
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_PROVIDER
+        value: mock          # switch to ollama/groq/gemini + add the matching key below if desired
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
